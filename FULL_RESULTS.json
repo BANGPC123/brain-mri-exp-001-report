@@ -1,0 +1,449 @@
+{
+  "pooled_out_of_fold": {
+    "n_slices": 3064,
+    "n_patients": 233,
+    "accuracy": 0.8887075718015666,
+    "balanced_accuracy": 0.8778869950845608,
+    "macro_precision": 0.8748930820954288,
+    "macro_recall": 0.8778869950845608,
+    "macro_f1": 0.8763226376695799,
+    "weighted_f1": 0.8886976370675763,
+    "mcc": 0.8259855568769747,
+    "cohen_kappa": 0.8259068283012209,
+    "macro_roc_auc_ovr": 0.9658912874453787,
+    "nll": 0.3465787949312376,
+    "ece10": 0.024837914081566357,
+    "brier_multiclass": 0.17008505859566583,
+    "cm": [
+      [
+        557,
+        89,
+        62
+      ],
+      [
+        124,
+        1289,
+        13
+      ],
+      [
+        30,
+        23,
+        877
+      ]
+    ],
+    "per_class": {
+      "meningioma": {
+        "support": 708,
+        "precision": 0.7834036568213784,
+        "recall": 0.786723163841808,
+        "f1": 0.7850599013389711,
+        "specificity": 0.934634974533107
+      },
+      "glioma": {
+        "support": 1426,
+        "precision": 0.9200571020699501,
+        "recall": 0.9039270687237027,
+        "f1": 0.9119207640608419,
+        "specificity": 0.9316239316239316
+      },
+      "pituitary": {
+        "support": 930,
+        "precision": 0.9212184873949579,
+        "recall": 0.943010752688172,
+        "f1": 0.9319872476089267,
+        "specificity": 0.96485473289597
+      }
+    },
+    "patient_level": {
+      "patients": 233,
+      "accuracy": 0.8884120171673819,
+      "macro_f1": 0.8923319327731093
+    }
+  },
+  "fold_mean_std": {
+    "accuracy": {
+      "mean": 0.8903440892742379,
+      "sample_std": 0.02972393835938659
+    },
+    "balanced_accuracy": {
+      "mean": 0.8825390943320794,
+      "sample_std": 0.041733176125442764
+    },
+    "macro_precision": {
+      "mean": 0.8794832105669798,
+      "sample_std": 0.02431149880662243
+    },
+    "macro_recall": {
+      "mean": 0.8825390943320794,
+      "sample_std": 0.041733176125442764
+    },
+    "macro_f1": {
+      "mean": 0.8770158760669788,
+      "sample_std": 0.03503359641100302
+    },
+    "weighted_f1": {
+      "mean": 0.8898669196309041,
+      "sample_std": 0.03315373392819808
+    },
+    "mcc": {
+      "mean": 0.8302732650542927,
+      "sample_std": 0.04742380140657687
+    },
+    "macro_roc_auc_ovr": {
+      "mean": 0.9697370155628798,
+      "sample_std": 0.01596365558198164
+    },
+    "nll": {
+      "mean": 0.3442057334367249,
+      "sample_std": 0.08019894497599382
+    },
+    "ece10": {
+      "mean": 0.0359552111081877,
+      "sample_std": 0.020635994853642245
+    },
+    "brier_multiclass": {
+      "mean": 0.1681449309813859,
+      "sample_std": 0.03552639064550988
+    }
+  },
+  "individual_fold_metrics": [
+    {
+      "n_slices": 542,
+      "n_patients": 45,
+      "accuracy": 0.9095940959409594,
+      "balanced_accuracy": 0.9176043390329105,
+      "macro_precision": 0.8981481481481483,
+      "macro_recall": 0.9176043390329105,
+      "macro_f1": 0.902111273785525,
+      "weighted_f1": 0.9122571059383898,
+      "mcc": 0.8638604953704092,
+      "cohen_kappa": 0.8601960350799617,
+      "macro_roc_auc_ovr": 0.9829191410717044,
+      "nll": 0.347472307944967,
+      "ece10": 0.01727307007270976,
+      "brier_multiclass": 0.14572150439749526,
+      "cm": [
+        [
+          108,
+          4,
+          0
+        ],
+        [
+          24,
+          221,
+          0
+        ],
+        [
+          12,
+          9,
+          164
+        ]
+      ],
+      "per_class": {
+        "meningioma": {
+          "support": 112,
+          "precision": 0.75,
+          "recall": 0.9642857142857143,
+          "f1": 0.84375,
+          "specificity": 0.9162790697674419
+        },
+        "glioma": {
+          "support": 245,
+          "precision": 0.9444444444444444,
+          "recall": 0.9020408163265307,
+          "f1": 0.9227557411273486,
+          "specificity": 0.9562289562289562
+        },
+        "pituitary": {
+          "support": 185,
+          "precision": 1.0,
+          "recall": 0.8864864864864865,
+          "f1": 0.9398280802292264,
+          "specificity": 1.0
+        }
+      },
+      "predictive_entropy_nats": 0.2484496152135872,
+      "mutual_information_nats": 0.12535610276992892,
+      "within_model_variance": 0.003389367449750493,
+      "patient_level": {
+        "patients": 45,
+        "accuracy": 0.8888888888888888,
+        "macro_f1": 0.8947067684795597
+      },
+      "fold": 1,
+      "members": 5,
+      "mc_passes_per_model": 500
+    },
+    {
+      "n_slices": 679,
+      "n_patients": 46,
+      "accuracy": 0.8497790868924889,
+      "balanced_accuracy": 0.8177276678364688,
+      "macro_precision": 0.852842105263158,
+      "macro_recall": 0.8177276678364688,
+      "macro_f1": 0.8252509412462096,
+      "weighted_f1": 0.8426178601546177,
+      "mcc": 0.7609110806312616,
+      "cohen_kappa": 0.7545722253918418,
+      "macro_roc_auc_ovr": 0.9663720157092085,
+      "nll": 0.3709343463854866,
+      "ece10": 0.024102661723770923,
+      "brier_multiclass": 0.20653712696452126,
+      "cm": [
+        [
+          99,
+          48,
+          20
+        ],
+        [
+          10,
+          318,
+          10
+        ],
+        [
+          5,
+          9,
+          160
+        ]
+      ],
+      "per_class": {
+        "meningioma": {
+          "support": 167,
+          "precision": 0.868421052631579,
+          "recall": 0.592814371257485,
+          "f1": 0.7046263345195729,
+          "specificity": 0.970703125
+        },
+        "glioma": {
+          "support": 338,
+          "precision": 0.848,
+          "recall": 0.9408284023668639,
+          "f1": 0.8920056100981767,
+          "specificity": 0.8328445747800587
+        },
+        "pituitary": {
+          "support": 174,
+          "precision": 0.8421052631578947,
+          "recall": 0.9195402298850575,
+          "f1": 0.8791208791208791,
+          "specificity": 0.9405940594059405
+        }
+      },
+      "predictive_entropy_nats": 0.29150294894971757,
+      "mutual_information_nats": 0.13020499167116037,
+      "within_model_variance": 0.0032708995506807994,
+      "patient_level": {
+        "patients": 46,
+        "accuracy": 0.8478260869565217,
+        "macro_f1": 0.8464893464893465
+      },
+      "fold": 2,
+      "members": 5,
+      "mc_passes_per_model": 500
+    },
+    {
+      "n_slices": 572,
+      "n_patients": 48,
+      "accuracy": 0.9073426573426573,
+      "balanced_accuracy": 0.9033835038180077,
+      "macro_precision": 0.8981558192956359,
+      "macro_recall": 0.9033835038180077,
+      "macro_f1": 0.900402971410919,
+      "weighted_f1": 0.9079269561902769,
+      "mcc": 0.8589619432103411,
+      "cohen_kappa": 0.8586646899490435,
+      "macro_roc_auc_ovr": 0.9755416293838,
+      "nll": 0.2653553066276329,
+      "ece10": 0.02175567284681383,
+      "brier_multiclass": 0.14191146214723444,
+      "cm": [
+        [
+          119,
+          16,
+          4
+        ],
+        [
+          28,
+          203,
+          0
+        ],
+        [
+          1,
+          4,
+          197
+        ]
+      ],
+      "per_class": {
+        "meningioma": {
+          "support": 139,
+          "precision": 0.8040540540540541,
+          "recall": 0.8561151079136691,
+          "f1": 0.8292682926829268,
+          "specificity": 0.9330254041570438
+        },
+        "glioma": {
+          "support": 231,
+          "precision": 0.9103139013452914,
+          "recall": 0.8787878787878788,
+          "f1": 0.8942731277533039,
+          "specificity": 0.9413489736070382
+        },
+        "pituitary": {
+          "support": 202,
+          "precision": 0.9800995024875622,
+          "recall": 0.9752475247524752,
+          "f1": 0.9776674937965261,
+          "specificity": 0.9891891891891892
+        }
+      },
+      "predictive_entropy_nats": 0.20105749876027498,
+      "mutual_information_nats": 0.11817647113815004,
+      "within_model_variance": 0.003175557264473153,
+      "patient_level": {
+        "patients": 48,
+        "accuracy": 0.9166666666666666,
+        "macro_f1": 0.9237472766884531
+      },
+      "fold": 3,
+      "members": 5,
+      "mc_passes_per_model": 500
+    },
+    {
+      "n_slices": 628,
+      "n_patients": 47,
+      "accuracy": 0.9171974522292994,
+      "balanced_accuracy": 0.9100380756985551,
+      "macro_precision": 0.8953504828504828,
+      "macro_recall": 0.9100380756985551,
+      "macro_f1": 0.9015446547639706,
+      "weighted_f1": 0.9188945374344392,
+      "mcc": 0.8670482039393371,
+      "cohen_kappa": 0.8662297230870064,
+      "macro_roc_auc_ovr": 0.9803455462965703,
+      "nll": 0.27484746177559477,
+      "ece10": 0.0607378294467935,
+      "brier_multiclass": 0.13913895881051264,
+      "cm": [
+        [
+          107,
+          11,
+          6
+        ],
+        [
+          24,
+          300,
+          1
+        ],
+        [
+          9,
+          1,
+          169
+        ]
+      ],
+      "per_class": {
+        "meningioma": {
+          "support": 124,
+          "precision": 0.7642857142857142,
+          "recall": 0.8629032258064516,
+          "f1": 0.8106060606060606,
+          "specificity": 0.9345238095238095
+        },
+        "glioma": {
+          "support": 325,
+          "precision": 0.9615384615384616,
+          "recall": 0.9230769230769231,
+          "f1": 0.9419152276295133,
+          "specificity": 0.9603960396039604
+        },
+        "pituitary": {
+          "support": 179,
+          "precision": 0.9602272727272727,
+          "recall": 0.9441340782122905,
+          "f1": 0.952112676056338,
+          "specificity": 0.9844097995545658
+        }
+      },
+      "predictive_entropy_nats": 0.3413756943725447,
+      "mutual_information_nats": 0.1890727529667954,
+      "within_model_variance": 0.004063806464052907,
+      "patient_level": {
+        "patients": 47,
+        "accuracy": 0.9148936170212766,
+        "macro_f1": 0.9198987807683459
+      },
+      "fold": 4,
+      "members": 5,
+      "mc_passes_per_model": 500
+    },
+    {
+      "n_slices": 643,
+      "n_patients": 47,
+      "accuracy": 0.8678071539657853,
+      "balanced_accuracy": 0.8639418852744556,
+      "macro_precision": 0.852919497277474,
+      "macro_recall": 0.8639418852744556,
+      "macro_f1": 0.8557695391282704,
+      "weighted_f1": 0.8676381384367978,
+      "mcc": 0.8005846021201145,
+      "cohen_kappa": 0.7978062224852946,
+      "macro_roc_auc_ovr": 0.9435067453531155,
+      "nll": 0.462419244449943,
+      "ece10": 0.05590682145085049,
+      "brier_multiclass": 0.20741560258716582,
+      "cm": [
+        [
+          124,
+          10,
+          32
+        ],
+        [
+          38,
+          247,
+          2
+        ],
+        [
+          3,
+          0,
+          187
+        ]
+      ],
+      "per_class": {
+        "meningioma": {
+          "support": 166,
+          "precision": 0.7515151515151515,
+          "recall": 0.7469879518072289,
+          "f1": 0.7492447129909365,
+          "specificity": 0.9140461215932913
+        },
+        "glioma": {
+          "support": 287,
+          "precision": 0.9610894941634242,
+          "recall": 0.8606271777003485,
+          "f1": 0.9080882352941176,
+          "specificity": 0.9719101123595506
+        },
+        "pituitary": {
+          "support": 190,
+          "precision": 0.8461538461538461,
+          "recall": 0.9842105263157894,
+          "f1": 0.9099756690997567,
+          "specificity": 0.9249448123620309
+        }
+      },
+      "predictive_entropy_nats": 0.2658548347047298,
+      "mutual_information_nats": 0.11238032239621279,
+      "within_model_variance": 0.0030991803690282246,
+      "patient_level": {
+        "patients": 47,
+        "accuracy": 0.8723404255319149,
+        "macro_f1": 0.8727142110762801
+      },
+      "fold": 5,
+      "members": 5,
+      "mc_passes_per_model": 500
+    }
+  ],
+  "published_reference_98_37pct": 0.9837,
+  "reproduced_98_37pct": false,
+  "note": "Not exact historical reproduction; patient-disjoint re-evaluation under a different protocol."
+}

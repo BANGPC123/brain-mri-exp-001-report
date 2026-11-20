@@ -1,0 +1,34 @@
+{
+  "args": {
+    "folds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "members": 5,
+    "epochs": 200,
+    "batch": 32,
+    "microbatch": 8,
+    "eval_batch": 16,
+    "lr": 0.001,
+    "mc": 500,
+    "seed": 2026,
+    "save_interval": 5,
+    "resume": true,
+    "out": "D:\\Projects\\Uncertainty-RIFA-Net\\experiments\\full_5fold_5ensemble",
+    "dry_run": false
+  },
+  "source_repository": "https://github.com/misti1203/Uncertainty-RIFA-Net",
+  "source_commit": "f76e9fa67b050824ca97dafb7efa45696052790f",
+  "source_dataset": "https://figshare.com/articles/dataset/brain_tumor_dataset/1512427",
+  "network_params": 7221651,
+  "device": "cuda",
+  "torch": "2.10.0+cu128",
+  "cuda_gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "comparison_warning": "Functional PyTorch port of upstream notebook; grayscale replicated to 3 channels; patient-disjoint 5-fold not the same as notebook's Kaggle 4-class split; gradient accumulation changes BN batch statistics.",
+  "cv_protocol": "outer test fold k; validation fold (k % 5)+1; train remaining three folds",
+  "checkpoint_selection": "minimum deterministic validation cross-entropy",
+  "mc_dropout": "activate only nn.Dropout modules while keeping BatchNorm eval; mean of 500 stochastic passes; average probabilities across 5 independent model checkpoints"
+}
